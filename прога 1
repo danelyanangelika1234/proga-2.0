@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std; 
+/*программа 1*/
+int main()
+{
+	setlocale(0, "");
+	int k1 = 0, k2 = 0, k3 = 0;
+	float sum = 0, sum1 = 10, sum2 = 20, sum3 = 30;
+	cout << "Введите количество бананов. k1 = ";
+	cin >> k1;
+	sum1 = sum1 * k1;
+	cout << "Введите количество кофе. k2 = ";
+	cin >> k2;
+	sum2 = sum2 * k2;
+	cout << "Введите количество мороженнго. k3 = ";
+	cin >> k3;
+	sum3 = sum3 * k3;
+	sum = sum1 + sum2 + sum3;
+	cout << "Сумма покупки " << sum;
+	system("pause");
+	return 0;
+}
+
