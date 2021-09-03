@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std; 
+/*программа 4*/
+
+
+
+int main()
+{
+	setlocale(0, "");
+	int digit = 0; // число для расчета
+	char exit = 'y'; // для выхода или продолжения
+
+	for (;;)
+	{
+		cout << "Введите число: ";
+		cin >> digit;
+		cout << "куб " << digit << " = " << digit * digit * digit;
+		cout << "\nПродолжить ввод чисел - Y, Выйти  - N: ";
+		cin >> exit; // выбор пользователя
+		if (exit != 'y' && exit != 'Y')
+			break; // прервать цикл
+	}
+	return 0;
+}
